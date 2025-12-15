@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Política de privacitat de Tarraco Boards. Informació sobre el tractament de dades personals, drets dels usuaris i protecció de dades (RGPD/LOPD).">
+    <title>TBoards — Política de Privacitat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Política de Privacitat - Tarraco Boards",
+      "description": "Informació sobre protecció de dades i política de privacitat.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "index.html"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacitat"
+        }]
+      }
+    }
+    </script>
+</head>
+
+<!-- texto legal -->
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html" aria-label="TBoards home">
+            <img src="media/img/TB-logo.png" alt="TBoards Logo" class="logo-img">
+            <div>
+                <div class="site-title">Tarraco Boards</div>
+                <div class="site-sub">Skate Shop & School</div>
+            </div>
+        </a>
+
+        <nav aria-label="Primària">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="productes.html">Productes</a>
+            <a class="nav-link" href="serveis.html">Serveis</a>
+            <a class="nav-link active" href="politica_privacitat.html">Privacitat</a>
+            <a class="nav-link" href="sobre_nosaltres.html">Nosaltres</a>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Obre menú"
+            onclick="toggleMobileNav()">☰</button>
+        <div class="mobile-menu">
+            <button onclick="toggleMobileNav()"
+                style="background:none;border:0;font-size:1.5rem;align-self:flex-end;cursor:pointer;margin-bottom:1rem;color:var(--muted)">✕</button>
+            <a href="index.html">Home</a>
+            <a href="productes.html">Productes</a>
+            <a href="serveis.html">Serveis</a>
+            <a href="politica_privacitat.html">Privacitat</a>
+            <a href="sobre_nosaltres.html">Nosaltres</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card" style="margin-top: 2.25rem">
+            <h1>Política de Privacitat</h1>
+            <p class="lead">La teva privacitat és important per a nosaltres.</p>
+
+            <section>
+                <h2>1. Responsable del Tractament</h2>
+                <p><strong>Identitat:</strong> Tarraco Boards (TBoards)<br>
+                    <strong>Domicili:</strong> Salou, Tarragona<br>
+                    <strong>Email:</strong> hola@tboards.cat
+                </p>
+            </section>
+
+            <section>
+                <h2>2. Finalitat del Tractament</h2>
+                <p>Tractem la informació que ens faciliten les persones interessades amb la finalitat de gestionar
+                    l'enviament de la informació que ens sol·licitin, prestar els serveis contractats i gestionar la
+                    relació
+                    amb els nostres clients.</p>
+            </section>
+
+            <section>
+                <h2>3. Legitimació</h2>
+                <p>La base legal per al tractament de les seves dades és l'execució del contracte de serveis o el
+                    consentiment de l'interessat en contactar amb nosaltres a través dels formularis de la web.</p>
+            </section>
+
+            <section>
+                <h2>4. Destinataris</h2>
+                <p>Les dades no es comunicaran a tercers, excepte per obligació legal.</p>
+            </section>
+
+            <section>
+                <h2>5. Drets</h2>
+                <p>Qualsevol persona té dret a obtenir confirmació sobre si a Tarraco Boards estem tractant dades
+                    personals
+                    que els concerneixin, o no. Les persones interessades tenen dret a accedir a les seves dades
+                    personals,
+                    així com a sol·licitar la rectificació de les dades inexactes o, si escau, sol·licitar la seva
+                    supressió
+                    quan, entre altres motius, les dades ja no siguin necessàries per a les finalitats que van ser
+                    recollides.</p>
+            </section>
+        </div>
+
+        <footer>
+            © <span id="year"></span> TBoards · <a href="politica_privacitat.html"
+                style="color:var(--muted);text-decoration:underline">Política de privacitat</a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMobileNav() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('show');
+            const btn = document.querySelector('.mobile-nav-toggle');
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

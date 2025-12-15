@@ -1,0 +1,361 @@
+:root {
+    --bg: #FFFFFF;
+    /* Fondo */
+    --text: #0f1724;
+    /* Texto principal (oscuro) */
+    --primary1: #723881;
+    /* Primario 1 (púrpura) */
+    --primary2: #61F2F5;
+    /* Primario 2 (cian) */
+    --primary3: #E0E0E0;
+    /* Primario 3 (gris claro) */
+    --muted: #6b7280;
+    --radius: 10px;
+}
+
+/* TODO: efecto liquid glass */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    background: url('../media/img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Prevenir scroll en body */
+}
+
+/* scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary1);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    /* Efecto de relleno */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a2c66;
+}
+
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: #ffffff;
+    border-bottom: 1px solid var(--primary3);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+    color: inherit
+}
+
+.logo-img {
+    height: 44px;
+    width: auto;
+    border-radius: 9px;
+    box-shadow: 0 6px 20px rgba(114, 56, 129, 0.12);
+}
+
+.site-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary1)
+}
+
+.site-sub {
+    font-size: .78rem;
+    color: var(--muted);
+    margin-top: 2px
+}
+
+/* navegacin  */
+nav {
+    display: flex;
+    gap: .5rem;
+    align-items: center
+}
+
+.nav-link {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.5rem 0.65rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.nav-link:hover {
+    background: var(--primary3);
+    color: var(--text)
+}
+
+.nav-link.active {
+    background: rgba(114, 56, 129, 0.1);
+    color: var(--primary1);
+}
+
+/* botón */
+.cta {
+    padding: .45rem .75rem;
+    background: linear-gradient(90deg, var(--primary2), #9ef5f8);
+    color: var(--primary1);
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.04)
+}
+
+/* Area principal de Scroll */
+/* Define el comportamiento de desplazamiento para el contenido debajo de la barra de navegación y hace q no mueva la barra de navegación*/
+/* TODO: Hacer que funcione sin el !important */
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Centrar contenido dentro de main */
+/* Actúa como el nuevo 'contenedor' para los hijos directos */
+main>* {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 2.25rem auto;
+    padding: 0 1.25rem
+}
+
+
+.hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 0.4em;
+    padding-left: 1em;
+    border-radius: var(--radius);
+    border: 1px solid var(--primary3);
+}
+
+.hero-left {
+    flex: 1
+}
+
+h1 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.9rem;
+    color: var(--primary1)
+}
+
+p.lead {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.5
+}
+
+.hero-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: .75rem
+}
+
+/* Tarjetas d contenido */
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem
+}
+
+.card {
+    background: #fff;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary3);
+    box-shadow: 0 4px 18px rgba(15, 23, 36, 0.03)
+}
+
+footer {
+    margin: 2.25rem auto 4rem;
+    color: #e8d5f0;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 0;
+    scroll-margin-top: 80px;
+}
+
+/* Reutilizando estilos .card para secciones, solo agregando el contenedor de cuadrícula */
+.sections-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.section-card {
+    display: block;
+    /* Hacer que el ancla se comporte como un bloque */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.section-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(114, 56, 129, 0.15);
+    border-color: var(--primary1);
+}
+
+@media (min-width: 768px) {
+    .sections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+section h2 {
+    margin: 0 0.5rem 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--primary1)
+}
+
+.screenshot {
+    background: linear-gradient(180deg, #fbfdfe, #ffffff);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary3);
+}
+
+/* responsive para telefonos */
+
+.mobile-nav-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    color: var(--muted);
+    font-size: 1.2rem
+}
+
+@media (max-width:880px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .card-row {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    nav {
+        display: none
+    }
+
+    .mobile-nav-toggle {
+        display: inline-flex
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    background: #fff;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.show {
+    transform: translateX(0);
+}
+
+.mobile-menu a {
+    padding: .6rem .75rem;
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none
+}
+
+.mobile-menu a:hover {
+    background: var(--primary3)
+}
+
+.anchor {
+    position: relative;
+    top: -72px;
+    visibility: hidden
+}
+
+/* Tarjetas de contenido */
+.card-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--primary3);
+    padding: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .card-thumb {
+        width: 70px;
+        height: 70px;
+    }
+}

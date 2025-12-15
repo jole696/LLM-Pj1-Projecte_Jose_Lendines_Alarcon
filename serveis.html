@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Serveis de Tarraco Boards. Classes de skate d'iniciació i perfeccionament, i tallers de muntatge i manteniment.">
+    <title>TBoards — Serveis</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Serveis - Tarraco Boards",
+      "description": "Classes de skate, tallers i esdeveniments a Salou amb Tarraco Boards.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "index.html"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serveis"
+        }]
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html" aria-label="TBoards home">
+            <img src="media/img/TB-logo.png" alt="TBoards Logo" class="logo-img">
+            <div>
+                <div class="site-title">Tarraco Boards</div>
+                <div class="site-sub">Skate Shop & School</div>
+            </div>
+        </a>
+
+        <nav aria-label="Primària">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="productes.html">Productes</a>
+            <a class="nav-link active" href="serveis.html">Serveis</a>
+            <a class="nav-link" href="politica_privacitat.html">Privacitat</a>
+            <a class="nav-link" href="sobre_nosaltres.html">Nosaltres</a>
+        </nav>
+
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Obre menú"
+            onclick="toggleMobileNav()">☰</button>
+        <div class="mobile-menu">
+            <button onclick="toggleMobileNav()"
+                style="background:none;border:0;font-size:1.5rem;align-self:flex-end;cursor:pointer;margin-bottom:1rem;color:var(--muted)">✕</button>
+            <a href="index.html">Home</a>
+            <a href="productes.html">Productes</a>
+            <a href="serveis.html">Serveis</a>
+            <a href="politica_privacitat.html">Privacitat</a>
+            <a href="sobre_nosaltres.html">Nosaltres</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card" style="margin-bottom: 2rem; margin-top: 2.25rem">
+            <h1>Serveis</h1>
+            <p class="lead">Aprèn i millora el teu skate amb nosaltres.</p>
+        </div>
+
+        <div class="card-row">
+            <div class="card">
+                <img src="media/img/classe_iniciacio.png" alt="Monitor ensenyant a un nen"
+                    style="width:100%;border-radius:6px;margin-bottom:1rem">
+                <h2>Classes d'Iniciació</h2>
+                <p>Mai has pujat a un skate? Cap problema! T'ensenyem des de zero a mantenir l'equilibri, utilitzar les
+                    proteccions i guanyar confiança sobre la taula. Diversió assegurada!</p>
+            </div>
+
+            <div class="card">
+                <img src="media/img/classe_perfeccionament.png" alt="Skater fent un truc aeri"
+                    style="width:100%;border-radius:6px;margin-bottom:1rem">
+                <h2>Classes de Perfeccionament</h2>
+                <p>Ja saps rodar i vols més? Els nostres monitors t'ajudaran a planxar aquell truc que se't resisteix.
+                    Tècnica de street, rampa, grinds i salts per portar el teu nivell al màxim.</p>
+            </div>
+
+            <div class="card">
+                <img src="media/img/taller_skate.png" alt="Muntatge de skate al taller"
+                    style="width:100%;border-radius:6px;margin-bottom:1rem">
+                <h2>Tallers de Muntatge</h2>
+                <p>El skate és més que patinar. Aprèn a muntar el teu propi setup, canviar rodaments, posar griptape
+                    sense bombolles i fer el manteniment bàsic del teu material.</p>
+            </div>
+        </div>
+
+        <footer>
+            © <span id="year"></span> TBoards · <a href="politica_privacitat.html"
+                style="color:var(--muted);text-decoration:underline">Política de privacitat</a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleMobileNav() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('show');
+            const btn = document.querySelector('.mobile-nav-toggle');
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ca">
+
+<!-- configuraciones y estilos +metadatos-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Tarraco Boards (TBoards) - El teu skate shop i escola de skate a Salou i la Costa Daurada. Skates complets, fingerboards, classes i tallers.">
+  <meta name="keywords"
+    content="skate shop, escola de skate, tarraco boards, tboards, salou, costa daurada, fingerboards, classes de skate">
+  <meta property="og:title" content="Tarraco Boards — Skate Shop & School">
+  <meta property="og:description" content="El teu skate shop a la Costa Daurada. Material, classes i passió pel patí.">
+  <meta property="og:image" content="media/img/TB-logo.png">
+  <meta property="og:type" content="website">
+  <title>TBoards — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Tarraco Boards",
+      "image": "media/img/TB-logo.png",
+      "description": "Skate shop i escola de skate a Salou.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salou",
+        "addressRegion": "Tarragona",
+        "addressCountry": "ES"
+      }
+    }
+  </script>
+</head>
+
+
+<body>
+  <!-- Barra de navegación -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="TBoards home">
+      <img src="media/img/TB-logo.png" alt="TBoards Logo" class="logo-img">
+      <div>
+        <div class="site-title">Tarraco Boards</div>
+        <div class="site-sub">Skate Shop & School</div>
+      </div>
+    </a>
+
+    <nav aria-label="Primària">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="productes.html">Productes</a>
+      <a class="nav-link" href="serveis.html">Serveis</a>
+      <a class="nav-link" href="politica_privacitat.html">Privacitat</a>
+      <a class="nav-link" href="sobre_nosaltres.html">Nosaltres</a>
+    </nav>
+
+    <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Obre menú"
+      onclick="toggleMobileNav()">☰</button>
+    <div class="mobile-menu">
+      <button onclick="toggleMobileNav()"
+        style="background:none;border:0;font-size:1.5rem;align-self:flex-end;cursor:pointer;margin-bottom:1rem;color:var(--muted)">✕</button>
+      <a href="index.html">Home</a>
+      <a href="productes.html">Productes</a>
+      <a href="serveis.html">Serveis</a>
+      <a href="politica_privacitat.html">Privacitat</a>
+      <a href="sobre_nosaltres.html">Nosaltres</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <a id="home" class="anchor"></a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <h1 id="hero-title">Tarraco Boards — El teu skate shop a la Costa Daurada</h1>
+        <p class="lead">Skates complets, fingerboards i tot el que necessites per rodar. Classes per a tots els nivells
+          al millor spot.</p>
+
+      </div>
+
+      <div style="width:360px;max-width:40%;min-width:260px">
+        <div class="screenshot">
+          <img alt="Skatepark Salou" src="media/img/skateparksalou.jpeg"
+            style="width:100%;display:block;border-radius:8px">
+        </div>
+      </div>
+    </section>
+
+    <div class="sections-grid">
+      <a id="productes" href="productes.html" class="card section-card" aria-labelledby="prod-title">
+        <div class="card-content">
+          <div class="card-text">
+            <h2 id="prod-title">Productes</h2>
+            <p style="color:var(--muted)">Descobreix la nostra selecció de skates complets, taules, eixos i rodes de les
+              millors marques. També tenim fingerboards i accessoris.</p>
+          </div>
+          <img src="media/img/skate_complet.png" alt="Skate complet" class="card-thumb">
+        </div>
+      </a>
+
+      <a id="serveis" href="serveis.html" class="card section-card" aria-labelledby="serv-title">
+        <div class="card-content">
+          <div class="card-text">
+            <h2 id="serv-title">Serveis</h2>
+            <p style="color:var(--muted)">Aprèn a patinar amb els nostres monitors titulats. Classes particulars, en
+              grup, extraescolars i tallers de muntatge i manteniment.</p>
+          </div>
+          <img src="media/img/classe_iniciacio.png" alt="Classes de skate" class="card-thumb">
+        </div>
+      </a>
+
+      <a id="privacitat" href="politica_privacitat.html" class="card section-card" aria-labelledby="priv-title">
+        <div class="card-content">
+          <div class="card-text">
+            <h2 id="priv-title">Privacitat</h2>
+            <p style="color:var(--muted)">La teva privacitat és important. Consulta la nostra política de protecció de
+              dades i ús de cookies per saber com et protegim.</p>
+          </div>
+          <img src="media/img/TB-logo.png" alt="Privacitat" class="card-thumb">
+        </div>
+      </a>
+
+      <a id="nosaltres" href="sobre_nosaltres.html" class="card section-card" aria-labelledby="about-title">
+        <div class="card-content">
+          <div class="card-text">
+            <h2 id="about-title">Nosaltres</h2>
+            <p style="color:var(--muted)">Som un equip de skaters apassionats de Salou. Volem compartir la cultura del
+              patí i fer créixer l'escena local. Vine a conèixer-nos!</p>
+          </div>
+          <img src="media/img/equip_skate_shop.png" alt="Equip TBoards" class="card-thumb">
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer: Derechos de autor y enlaces legales -->
+    <footer>
+      © <span id="year"></span> TBoards · <a href="politica_privacitat.html"
+        style="color:var(--muted);text-decoration:underline">Política de privacitat</a>
+    </footer>
+  </main>
+
+  <!-- Banner de cookies -->
+  <div id="cookie-banner"
+    style="position:fixed;bottom:0;left:0;right:0;background:#fff;padding:1rem;border-top:1px solid var(--primary3);box-shadow:0 -4px 10px rgba(0,0,0,0.05);display:none;align-items:center;justify-content:space-between;gap:1rem;z-index:999;flex-wrap:wrap">
+    <p style="margin:0;font-size:0.9rem;color:var(--text)">Utilitzem cookies pròpies i de tercers per millorar la teva
+      experiència. <a href="politica_privacitat.html" style="color:var(--primary1);text-decoration:underline">Més
+        informació</a>.</p>
+    <button onclick="acceptCookies()" class="cta"
+      style="border:0;cursor:pointer;font-size:0.9rem;padding:0.5rem 1rem">Acceptar</button>
+  </div>
+
+  <script>
+    // simple mobile toggle
+    function toggleMobileNav() {
+      const menu = document.querySelector('.mobile-menu');
+      menu.classList.toggle('show');
+      const btn = document.querySelector('.mobile-nav-toggle');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !isExpanded);
+    }
+
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* Logica cookies*/
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
