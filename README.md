@@ -1,4 +1,4 @@
-# PROJECTE WEB: Disseny i Implementació d’una Pàgina Web Personalitzada: Tarraco Boards
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/5ee851b1-4e5e-4c4e-8f90-b498d13a2bc6" /># PROJECTE WEB: Disseny i Implementació d’una Pàgina Web Personalitzada: Tarraco Boards
 
 # Fase 1. Definir la Marca i el Client Fictici
 ## 1. Justificació i objectius
@@ -62,6 +62,18 @@ El lloc web compleix amb les normatives de protecció de dades vigents:
 
 - **HTML**: L'estructura segueix l'estàndard HTML5. S'han tancat correctament les etiquetes i s'han utilitzat els atributs obligatoris com `alt` en les imatges.
 - **CSS**: S'han utilitzat propietats estàndard i prefixes (`-webkit-`) on era necessari per a la compatibilitat (barra de desplaçament).
+Validacion styles.css
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/432cd9d3-44d0-4452-a615-19382ed38e53" />
+Validacion index.html
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/a8a7f67f-282f-4e98-918c-b34b2c1383bf" />
+Validacion productes.html
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/a03834e2-3da2-44b3-b23e-30066499304e" />
+Validacion serveis.html
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/4768e5fc-0438-408c-86d0-3bc059fdb63f" />
+Validacion privacitat.html
+<img width="651" height="424" alt="image" src="https://github.com/user-attachments/assets/e51b35aa-236e-428d-931f-5cf277c0b141" />
+Validacion sobre_nosaltres.html
+<img width="651" height="453" alt="image" src="https://github.com/user-attachments/assets/58965571-a8db-442e-af1e-10800d16bb3f" />
 
 ## 6. Conclusions i Reflexió
 
