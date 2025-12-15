@@ -1,5 +1,7 @@
 # PROJECTE WEB: Disseny i Implementació d’una Pàgina Web Personalitzada: Tarraco Boards
 
+Enlace web: [https://jole696.github.io/LLM-Pj1-Projecte_Jose_Lendines_Alarcon/](url)
+Enalce repositorio: [https://github.com/jole696/LLM-Pj1-Projecte_Jose_Lendines_Alarcon](url)
 # Fase 1. Definir la Marca i el Client Fictici
 ## 1. Justificació i objectius
 
